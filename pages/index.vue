@@ -1,5 +1,5 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <a href="/lab02">lab02</a>
   </div>
 </template>

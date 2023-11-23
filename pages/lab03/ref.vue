@@ -1,19 +1,18 @@
 <template>
     <div>
-        {{ counter }}
+        {{ counter.a }}
     </div>
-
     <div>
-        <button class="btn btn-primary" @click="increment">click</button>
+        <button @click="increment">click</button>
     </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-const counter = ref(0)
+const counter = ref({ m: { 'k1': 10, 'k2': 20 }, a: ['a', 'b'] })
 
 function increment() {
-    counter.value++
+    counter.value.a.push('c')
 }
 
 </script>

@@ -1,10 +1,12 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import axios from 'axios'
 
 const count = ref(0)
 
 function increment() {
   count.value++
+  console.log(count)
 }
 
 onMounted(() => {

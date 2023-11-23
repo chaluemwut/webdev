@@ -1,5 +1,6 @@
 <template>
-    <button v-bind:disabled="b">click me</button>
+    <p v-if="b">b is true</p>
 </template>
 <script setup>
+const b = true
 </script>

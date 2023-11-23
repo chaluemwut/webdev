@@ -4,13 +4,16 @@
     </div>
 
     <div>
-        <button @click="counter++">click</button>
+        <button class="btn btn-primary" @click="increment">click</button>
     </div>
 </template>
 
 <script setup>
-import {ref} from 'vue'
+import { ref } from 'vue'
 const counter = ref(0)
-counter.value++
-console.log(counter.value)
+
+function increment() {
+    counter.value++
+}
+
 </script>

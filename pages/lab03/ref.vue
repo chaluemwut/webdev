@@ -1,17 +1,16 @@
 <template>
     <div>
-        click me: {{ count }}
+        c is {{ c }}
     </div>
+
     <div>
-        <button @click="onClick">click 123</button>
+        <button class="btn btn-primary" @click="c++">click me</button>
     </div>
 </template>
 
 <script setup>
-    import {ref} from 'vue'
-    const count = ref(0)
+import {ref} from 'vue'
 
-    function onClick(){
-        count.value++
-    }
+const c = ref(0)
+
 </script>

@@ -1,16 +1,16 @@
 <template>
     <div>
-        c is {{ c }}
+        {{ counter }}
     </div>
 
     <div>
-        <button class="btn btn-primary" @click="c++">click me</button>
+        <button @click="counter++">click</button>
     </div>
 </template>
 
 <script setup>
 import {ref} from 'vue'
-
-const c = ref(0)
-
+const counter = ref(0)
+counter.value++
+console.log(counter.value)
 </script>

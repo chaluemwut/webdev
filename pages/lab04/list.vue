@@ -11,11 +11,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
 const items = ref([{ message: 'aa' }, { message: 'bb' }])
 
-function addList() {
-    items.value.push({ message: 'ddd' })
-}
+
+onMounted(()=>{
+    console.log('start page...')
+})
 
 </script>
